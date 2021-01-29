@@ -1,0 +1,144 @@
+/*Font = "Yusei Magic"*/
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+
+/*Colors for the Page*/
+:root {
+  /*polygram colors*/
+  --3sidepoly: #d94165;
+  --4sidepoly: #EF476F;
+  --5sidepoly: #F36A6D;
+  --6sidepoly: #F78C6B;
+  --7sidepoly: #FBAF69;
+  --8sidepoly: #FFD166;
+  
+  /*row colors*/
+  --regpolyrow: #30C5FF;
+  --irregpolyrow: #118AB2;
+  --typespolyrow: #0C637F;
+  --nonpolyrow: #073B4C;
+  
+  /*font*/
+  --font: 'Yusei Magic';
+}
+
+html, body{
+  background: #06D6A0;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: white;
+  font-family: 'Yusei Magic';
+}
+
+/*items*/
+.container {
+  width: 95vw;
+  /*height: 500px;*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: space-around;
+}
+
+.heads {
+  height: 100px;
+  width: 110px;
+  border-radius: 20% 0 0 20%;
+  margin: 3px;
+  font-family: var(--font);
+  color: white;
+  font-weight: bold;
+}
+
+/*individual head stylings*/
+#regular-polygon-head {
+  background: var(--regpolyrow);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#irregular-polygon-head {
+  background: var(--irregpolyrow);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#types-polygon-head {
+  background: var(--typespolyrow);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#non-polygon-head {
+  background: var(--nonpolyrow);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/*break so that each line breaks when it needs to*/
+.break {
+  height: 0px;
+  flex-basis: 100%;
+}
+
+/*items categories*/
+.items {
+  height: 100px;
+  flex-basis: auto;
+  flex-grow: 1;
+  margin: 3px;
+  color: white;
+  font-family: 'Yusei Magic';
+  width: 0;
+  font-size: auto;
+}
+
+/*items row categories*/
+.regular-items {
+  background: var(--regpolyrow);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.irregular-items {
+  background: var(--irregpolyrow);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.type-items {
+  background: var(--typespolyrow);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.non-polygon-items {
+  background: var(--nonpolyrow);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+
