@@ -1,0 +1,249 @@
+/*Font = "Yusei Magic"*/
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+
+/*Colors for the Page*/
+:root {
+  /*polygram colors*/
+  --3sidepoly: #d94165;
+  --4sidepoly: #EF476F;
+  --5sidepoly: #F36A6D;
+  --6sidepoly: #F78C6B;
+  --7sidepoly: #FBAF69;
+  --8sidepoly: #FFD166;
+  
+  /*row colors*/
+  --regpolyrow: #30C5FF;
+  --irregpolyrow: #118AB2;
+  --typespolyrow: #0C637F;
+  --nonpolyrow: #073B4C;
+  
+  /*types of Polygons colors*/
+  --concavepolycolor: #423085;
+  --convexpolycolor: #5840B1;
+  --complexpolycolor: #6146C3;
+  
+  /*Non Polygons Colors*/
+  --circlecolor: #714DBB;
+  --shapeswithcurvescolor: #8054B2;
+  --shapesnotclosedcolor: #905BAA;
+  --threedimensionalobjectscolor: #9F61A1;
+  
+  /*font*/
+  --font: 'Yusei Magic';
+}
+
+html, body{
+  background: #06D6A0;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: white;
+  font-family: 'Yusei Magic';
+}
+
+p {
+  height: 5px;
+  margin-top: 0px;
+}
+
+/*items*/
+.container {
+  width: 95vw;
+  min-width: 1000px;
+  /*height: 500px;*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: space-around;
+}
+
+.heads {
+  height: 120px;
+  width: 110px;
+  border-radius: 10px;
+  margin: 3px;
+  font-family: var(--font);
+  color: white;
+  font-weight: bold;
+  transition: width 1s ease;
+}
+
+.heads:hover {
+  width: 220px;
+}
+/*individual head stylings*/
+#regular-polygon-head {
+  background: var(--regpolyrow);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#irregular-polygon-head {
+  background: var(--irregpolyrow);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#types-polygon-head {
+  background: var(--typespolyrow);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#non-polygon-head {
+  background: var(--nonpolyrow);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/*break so that each line breaks when it needs to*/
+.break {
+  height: 0px;
+  flex-basis: 100%;
+}
+
+/*items categories*/
+.items {
+  height: 120px;
+  flex-basis: auto;
+  flex-grow: 1;
+  margin: 3px;
+  color: white;
+  font-family: 'Yusei Magic';
+  width: 0;
+  font-size: auto;
+  border-radius: 10px;
+}
+
+/*items row categories*/
+.regular-items {
+  background: var(--regpolyrow);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  transition: flex-grow 1s ease;
+}
+
+.regular-items:hover {
+  flex-grow: 1.5;
+  font-weight: bold;
+}
+
+.irregular-items {
+  background: var(--irregpolyrow);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: flex-grow 1s ease;
+}
+
+.irregular-items:hover {
+  flex-grow: 1.5;
+  font-weight: bold;
+}
+
+.type-items {
+  background: var(--typespolyrow);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: flex-grow 1s ease;
+}
+
+.type-items:hover {
+  flex-grow: 1.5;
+  font-weight: bold;
+}
+
+.non-polygon-items {
+  background: var(--nonpolyrow);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: flex-grow 1s ease;
+}
+
+.non-polygon-items:hover {
+  flex-grow: 1.2;
+}
+
+/*SVG items*/
+svg {
+  width: 160px;
+  background: transparent;
+  flex-basis: auto;
+  flex-grow: 1;
+  stroke: white;
+  stroke-width: 1.5px;
+}
+
+.triangle {
+  fill: var(--3sidepoly);
+}
+
+.quadrillateral {
+  fill: var(--4sidepoly);
+}
+
+.pentagon {
+  fill: var(--5sidepoly);
+}
+
+.hexagon {
+  fill: var(--6sidepoly);
+}
+
+.heptagon {
+ 
+  fill: var(--7sidepoly);
+}
+
+.octagon {
+  fill: var(--8sidepoly);
+}
+
+.concave {
+  fill: var(--concavepolycolor);
+}
+
+.convex {
+  fill: var(--convexpolycolor);
+}
+
+.complex {
+  fill: var(--complexpolycolor);
+}
+
+.circle {
+  fill: var(--circlecolor);
+}
+
+.curves {
+  fill: var(--shapeswithcurvescolor);
+  stroke-linejoin: round;
+}
+
+.not-closed {
+  fill: none;
+  stroke: var(--shapesnotclosedcolor);
+  stroke-width: 3px;
+}
