@@ -1,3 +1,4 @@
+
 var items = document.querySelectorAll(".items");
 var svg = document.getElementsByClassName("svg"); 
 var info = document.getElementsByClassName("info");
@@ -50,7 +51,7 @@ function returnSVG(i){
   var moveBackSVG = gsap.timeline();
   moveBackSVG
     .to(svg[i], {duration: 1, attr:{viewBox: originalViewboxValues[i]}}, .2)
-    .to(infoArray[i], {duration: 1, opacity: "0%"}, .1); 
+    .to(infoArray[i], {duration: 1, opacity: "0"}, .1); 
   moveBackSVG.play();
 }
 
@@ -95,7 +96,7 @@ function changeSVGViewbox(i){
   var slideSVG = gsap.timeline();
   slideSVG
      .to(svg[i], {duration: 1,  attr:{viewBox: newViewboxValues[i]}}, .5)
-     .to(infoArray[i], {duration: 1, opacity: "100%"}, 1);
+     .to(infoArray[i], {duration: 1, opacity: "1"}, 1);
   slideSVG.play();
  
   items.forEach((item) => {
